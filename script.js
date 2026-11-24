@@ -70,14 +70,10 @@ const style = el("style", {
       border-radius: 50%;
       cursor: pointer;
       padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #fff;
-      background:
-        radial-gradient(circle at 30% 25%, rgba(255,255,255,.55), transparent 22%),
-        radial-gradient(circle at 25% 75%, #ff9a3c 0, transparent 30%),
-        radial-gradient(circle at 75% 70%, #ff5fa8 0, transparent 35%),
-        radial-gradient(circle at 50% 80%, #3fe0c5 0, transparent 35%),
-        radial-gradient(circle at 70% 25%, #7a5cff 0, transparent 40%),
-        radial-gradient(circle, #8a4fd6, #2a1650);
       box-shadow:
         0 0 30px 6px rgba(190, 110, 255, .55),
         inset 0 0 40px rgba(0, 0, 0, .6),
@@ -98,7 +94,9 @@ const style = el("style", {
     .answer {
       position: relative;
       z-index: 1;
-      padding: 0 14%;
+      display: block;
+      max-width: 72%;
+      text-align: center;
       font-size: clamp(22px, 6vw, 34px);
       font-weight: 600;
       line-height: 1.2;
@@ -111,7 +109,7 @@ const style = el("style", {
       0%   { transform: translate(0, 0) rotate(0); }
       25%  { transform: translate(-8px, 4px) rotate(-3deg); }
       50%  { transform: translate(8px, -4px) rotate(3deg); }
-      75%  { transform: translate(-6px, -4px) rotate(-2deg); }
+      75%  { transform: translate(-3px, -2px) rotate(-1deg); }
       100% { transform: translate(6px, 4px) rotate(2deg); }
     }
     .hint { margin: 0; font-size: 13px; color: #9aa3c7; text-align: center; }
