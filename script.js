@@ -32,11 +32,7 @@ const style = el("style", {
     .app {
       width: min(100%, 560px);
       padding: clamp(16px, 4vw, 32px);
-      border: 2px solid transparent;
-      border-radius: 6px;
-      background:
-        linear-gradient(#060a1f, #060a1f) padding-box,
-        linear-gradient(135deg, #00c8d7, #060a1f 45%, #7cff00) border-box;
+      background: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -74,6 +70,13 @@ const style = el("style", {
       align-items: center;
       justify-content: center;
       color: #fff;
+      background:
+        radial-gradient(circle at 30% 25%, rgba(255,255,255,.55), transparent 22%),
+        radial-gradient(circle at 25% 75%, #ff9a3c 0, transparent 30%),
+        radial-gradient(circle at 75% 70%, #ff5fa8 0, transparent 35%),
+        radial-gradient(circle at 50% 80%, #3fe0c5 0, transparent 35%),
+        radial-gradient(circle at 70% 25%, #7a5cff 0, transparent 40%),
+        radial-gradient(circle, #8a4fd6, #2a1650);
       box-shadow:
         0 0 30px 6px rgba(190, 110, 255, .55),
         inset 0 0 40px rgba(0, 0, 0, .6),
